@@ -9,7 +9,7 @@ def pred_prob_lp(class_names: list, label_counts: dict, pred_probs: np.array) ->
         label_counts (dict): A dictionary specifying the expected count for each label. The keys represent the class (N), and the values (K) constraints.
         pred_probs (np.array): A 2D array of shape (N, K) containing the model predicted probabilities for each label. Each row corresponds to a class, corresponding to the class_name parameter, and the columns represent probabilities for classes {0, 1, ..., K-1}.
     Returns:
-        pred_lp: A list of predicted labels, with a total length of N. The list satisfies the constraints defined by label_counts and is optimized to maximize the total probability score across all predictions.
+        pred_lp (list): A list of predicted labels, with a total length of N. The list satisfies the constraints defined by label_counts and is optimized to maximize the total probability score across all predictions.
     
     """
     
