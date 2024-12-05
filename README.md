@@ -2,7 +2,7 @@
 Prediction probabilities with a linear programming constraint during label assignment.
 
 ## Usage
-Examples label contraint imposed using predlp via this code:
+Example label contraint imposed using the package *predlp* via this code:
 ```python
 from predlp.solver import pred_prob_lp
 
@@ -33,3 +33,15 @@ pred_after_lp == ['label_a', 'label_b', 'label_a', 'label_c']
 
 ## Citation and related publications
 
+Here are relevant papers to cite if you use this package:
+
+<details><summary><a href="https://www.statcan.gc.ca/en/conferences/symposium2024/program">Life in the FastText Lane: Harnessing Linear Programming Constrained Machine Learning for Classifications Revision</a> (<b>click to show bibtex</b>) </summary>
+
+    @inproceedings{
+        title={Life in the FastText Lane: Harnessing Linear Programming Constrained Machine Learning for Classifications Revision},
+        author={Justin Evans, Laura Wile},
+        conference={Statistics Canada's International Methodology Symposium: The Future of Official Statistics},
+        year={2024}
+    }
+
+</details>
