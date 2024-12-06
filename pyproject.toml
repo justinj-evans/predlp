@@ -11,6 +11,8 @@ name = "predlp"
 version = "0.0.0"
 description = "Prediction probabilities with a linear programming constraint during label assignment."
 authors = ["Justin Evans <11je20@queensu.ca>"]
+long_description_content_type="text/markdown"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
