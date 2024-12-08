@@ -50,3 +50,9 @@ Here are relevant papers to cite if you use this package:
     }
 
 </details>
+
+## Contribute
+Contributions of any kind welcome. See the [development guide](DEVELOPMENT.md) to get started.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
