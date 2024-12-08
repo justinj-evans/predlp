@@ -1,4 +1,10 @@
 # PredLP
+<div align="left">
+<a href="https://pypi.org/pypi/predlp/" target="_blank"><img src="https://img.shields.io/pypi/v/predlp.svg" alt="pypi_versions"></a>
+<a href="https://pypi.org/pypi/predlp/" target="_blank"><img src="https://img.shields.io/badge/python-3.8%2B-blue" alt="py_versions"></a>
+</div>
+<br/>
+
 Prediction probabilities with a linear programming constraint during label assignment.
 
 ## Usage
@@ -32,7 +38,6 @@ pred_after_lp == ['label_a', 'label_b', 'label_a', 'label_c']
 - **pred_lp** (list): A list of predicted labels, with a total length of N. The list satisfies the constraints defined by label_counts and is optimized to maximize the total probability score across all predictions.
 
 ## Citation and related publications
-
 Here are relevant papers to cite if you use this package:
 
 <details><summary><a href="https://www.statcan.gc.ca/en/conferences/symposium2024/program">Life in the FastText Lane: Harnessing Linear Programming Constrained Machine Learning for Classifications Revision</a> (<b>click to show bibtex</b>) </summary>
