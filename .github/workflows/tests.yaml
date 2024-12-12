@@ -1,0 +1,45 @@
+name: pytest
+on:
+    pull_request:
+    push:
+
+jobs:
+    run-tests:
+        name: Run pytest jobs
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+        
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
+                python-version: 3.X
+
+            - name: Cache Poetry and pip dependencies
+              uses: actions/cache@v3
+              with:
+                path: |
+                    ~/.cache/pip
+                    ~/.cache/pypoetry
+                key: ${{ runner.os }}-pip-${{ hashFiles('**/poetry.lock') }}
+                restore-keys: |
+                    ${{ runner.os }}-pip-
+    
+            - name: Install Poetry
+              run: python -m pip install --upgrade pip poetry
+            
+            - name: Validate and Install Dependencies
+              run: |
+                poetry check
+                poetry install
+    
+            - name: Run pytest on package code
+              run: poetry run pytest
+
+            
+
+        
+
+
