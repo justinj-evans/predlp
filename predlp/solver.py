@@ -1,7 +1,6 @@
-import numpy as np
 from pulp import LpProblem, LpVariable, lpSum, LpMaximize
 
-def pred_prob_lp(class_names: list, label_counts: dict, pred_probs: np.array) -> list:
+def pred_prob_lp(class_names: list, label_counts: dict, pred_probs) -> list:
     """ An LP solver for prediction probabilities
 
     Args:
