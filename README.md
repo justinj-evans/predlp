@@ -2,6 +2,7 @@
 <div align="left">
 <a href="https://pypi.org/pypi/predlp/" target="_blank"><img src="https://img.shields.io/pypi/v/predlp.svg" alt="pypi_versions"></a>
 <a href="https://pypi.org/pypi/predlp/" target="_blank"><img src="https://img.shields.io/badge/python-3.8%2B-blue" alt="py_versions"></a>
+<a href="https://github.com/justinj-evans/predlp/actions/workflows/tests.yaml/badge.svg" target="_blank"><img src="https://github.com/justinj-evans/predlp/actions/workflows/tests.yaml/badge.svg" alt="pytest"></a>
 </div>
 <br/>
 
